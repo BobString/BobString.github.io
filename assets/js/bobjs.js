@@ -45,9 +45,9 @@ $(document).ready(function() {
   
   
 var jobs= [
-    {className:'first', id: 3, content: 'Internship as computer analyst, Zaizi, Seville, Spain', start: new Date(2012, 2, 1), end: new Date(2012, 8, 7),image:"assets/img/work-1r.png"},
-    {className:'second', id: 4, content: 'Student Assistant, Institutt for data- og elektroteknikk, University of Stavanger, Norway', start: new Date(2013, 0, 1),end: new Date(2013, 5, 25),image:"assets/img/work-2r.png"},
-{className:'thrid', id: 5, content: 'Android Developer, Time and Date AS, Norway', start: new Date(2013, 3, 1),end: Date.now(),image:"assets/img/work-3r.png"}
+    {className:'first', id: 3, content: 'Zaizi (Seville, Spain)', desc:"Internship as computer analyst, Zaizi, Seville, Spain", start: new Date(2012, 2, 1), end: new Date(2012, 8, 7),image:"assets/img/work-1r.png"},
+    {className:'second', id: 4, content: 'University of Stavanger (Stavanger, Norway)', desc:"Student Assistant, Institutt for data- og elektroteknikk, University of Stavanger, Norway", start: new Date(2013, 0, 1),end: new Date(2013, 5, 25),image:"assets/img/work-2r.png"},
+{className:'third', id: 5, content: 'Time and Date AS (Stavanger, Norway)',desc:"Android Developer, Time and Date AS, Norway", start: new Date(2013, 3, 1),end: Date.now(),image:"assets/img/work-3r.png"}
   ];
   var itemsWork = new vis.DataSet(jobs);
 
@@ -56,22 +56,24 @@ var jobs= [
 
 timelinework.on('select', function (properties) {
 	var text = "";
+	var desc = "";
 	var image = "";
 	for(i in jobs){
 		if(jobs[i].id == properties.items[0]){
 			text= jobs[i].content;
+			desc = jobs[i].desc;
 			image = jobs[i].image;
 			var unique_id = $.gritter.add({
             // (string | mandatory) the heading of the notification
-            title: 'Job description',
+            title: text,
             // (string | mandatory) the text inside the notification
-            text: text,
+            text: desc,
             // (string | optional) the image to display on the left
             image: image,
             // (bool | optional) if you want it to fade out on its own or just sit there
             sticky: false,
             // (int | optional) the time you want it to be alive for before fading out
-            time: '3000',
+            time: '5000',
             // (string | optional) the class name you want to apply to that specific message
             class_name: 'my-sticky-class'
         });
