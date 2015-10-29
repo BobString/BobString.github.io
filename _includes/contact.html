@@ -1,0 +1,47 @@
+<!-- Contact Start -->
+
+<section id="contact" class="content-section text-center">
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact</h2>
+                    <h3 class="section-subheading text-muted">Send me an email if you would like me to code for you or save your neighborhood!</h3>
+                </div>
+            </div>
+        <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+
+          {% if site.email %}
+            {% if site.email contains '@' %}
+              {% assign newemail = site.email | split: '@' %}
+                <p>
+                <script>
+                  function join_at_email(user, domain){
+                  return (user && domain)?(user + "@" + domain):"";
+                  }
+                  document.write('<a href="mailto:'
+                  + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
+                  + '">'
+                  + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
+                  + '</a>'
+                  );
+                  </script>
+                </p>
+            {% else %}
+              <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            {% endif %}
+          {% endif %}
+
+          <ul class="list-inline social-buttons">
+          {% for network in site.social %}
+           <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+          {% endfor %}
+          </ul>
+
+        </div>
+    </div>
+     </div>
+</section>
+
+<!-- Contact End -->

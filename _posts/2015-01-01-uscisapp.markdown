@@ -1,0 +1,17 @@
+---
+title: USCIS Case Status
+subtitle: Android App
+layout: default
+modal-id: 1
+date: 2015-08-01
+img: uscisapp.png
+thumbnail: uscisappicon.png
+alt: image-alt
+project-date: August 2015
+client: Myself
+category: Android App
+description: I made this app while I had a case with the USCIS and was not happy with the current apps.
+link: https://play.google.com/store/apps/details?id=com.robertmm.usciscasestatus
+link-text: Google Play
+
+---

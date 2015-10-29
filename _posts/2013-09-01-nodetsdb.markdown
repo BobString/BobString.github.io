@@ -1,0 +1,17 @@
+---
+title: nodetsdb
+subtitle: Node JS module
+layout: default
+modal-id: 3
+date: 2013-09-01
+img: 
+thumbnail: nodetsdbicon.png
+alt: image-alt
+project-date: September 2013
+client: Part of the MSc thesis
+category: Node JS module
+description: Simple Node JS module to get datapoints from an OpenTSDB database
+link: https://www.npmjs.com/package/nodetsdb
+link-text: npm link
+
+---
