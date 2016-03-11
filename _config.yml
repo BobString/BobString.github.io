@@ -40,7 +40,7 @@ events:
   - image: "./img/timeline/talkspace.png"
     date: "February 2016 - Today"
     title: "Android Engineer @ <a href='http://www.talkspace.com/'>Talkspace</a>"
-    description: "Responsible for designing, developing, and maintaining Android applications. <a href='https://play.google.com/store/apps/dev?id=8352391058331202125'>Apps link</a> "
+    description: "Responsible for designing, developing, and maintaining Android applications."
   - image: "./img/timeline/tad.png"
     date: "April 2013 - January 2016"
     title: "Android developer @ <a href='https://www.timeanddate.com/'>Time And Date AS</a>"
