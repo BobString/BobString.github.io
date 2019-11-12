@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "The quick, brown fox jumps over a lazy dog",
+      "category" : "welcome",
+      "tags"     : "welcome",
+      "url"      : "/the-quick-brown-fox-jumps-over-a-lazy-dog/",
+      "date"     : "2015-11-12 16:42:24 +0000"
+    } ,
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "category" : "welcome",
+      "tags"     : "welcome and hello-world",
+      "url"      : "/welcome-to-jekyll/",
+      "date"     : "2015-11-12 16:08:24 +0000"
+    } 
+  
+]
